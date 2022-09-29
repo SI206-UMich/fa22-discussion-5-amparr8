@@ -109,7 +109,7 @@ class TestAllMethods(unittest.TestCase):
 	def test_warehouse_max_price(self):
 		w=Warehouse()
 		w.add_item(self.item1)
-		self.assertEqual(w.get_max_price(), None)
+		self.assertEqual(w.get_max_price(), 'Beer')
 		w1= Warehouse([self.item1,self.item2])
 		self.assertEqual(w1.get_max_price(),'Beer')
 		
